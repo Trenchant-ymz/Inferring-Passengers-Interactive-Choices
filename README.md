@@ -6,6 +6,11 @@ Public transports, such as subway lines and buses, offer affordable ride-sharing
 people’s preferences from their public transit choices is non-trivial. When people travel by public transits, they make sequences of transit choices, and their rewards are usually influenced by the other people’s choices, so this process can be seen as a Markov Game
 (MG). In this paper, we make the first effort to model travelers’ preferences of making transit choices using MGs. Based on the discovery that passengers usually never change their policies, we propose novel algorithms to extract the reward functions from the observed, deterministic equilibrium joint policy of all agents in a general-sum MG to infer travelers’ preferences. First, we assume we have the access to the entire joint policy. We characterize the set of all reward functions for which the given joint policy is a Nash equilibrium policy. In order to remove the degeneracy of the solution, we then attempt to pick reward functions so as to maximize the deviation from the the observed policy to the suboptimal policy of each agent. This result in a skillfully solvable linear programming algorithm of the multi-agent inverse reinforcement learning (MA-IRL) problem. Then, we deal with the case where we have access to the equilibrium joint policy through an actual trajectory. We propose an iterative algorithm inspired by singleagent apprenticeship learning algorithms and the cyclic coordinate descent approach. Then, we validate our algorithms using a simple discrete problem. Finally, under the assumption that the actual joint policy is Nash equilibrium and the passengers’ reward functions are linear with the decision-making features, we use the proposed algorithms on a unique real-world dataset (from Shenzhen, China) to extract passengers’ preferences.
 
+Solution Framework
+----
+![](https://anonymous.4open.science/repository/4fe4a551-b4df-43cf-8cb7-47dff24fe608/images/solution%20framework.png)
+<br> Fig.1 Solution Framework
+
 Data Description
 ----
 In [Download_Data](https://anonymous.4open.science/repository/4fe4a551-b4df-43cf-8cb7-47dff24fe608/Download_Data/), we release our dataset. The released dataset was collected and processed by following steps.
@@ -16,7 +21,10 @@ In Shenzhen, there are automatic fare collection (AFC) systems in all buses and 
 <br>[1] Google GeoCoding. 2016. Road map data. Google. https://developers.google.com/maps/documentation/geocoding/
 
 ### Map Griding and Trip Aggregation
-In Shenzhen, China, there are about five thousand bus stops and more than one hundred subway stations. Many of these stations are located closely, especially in downtown areas. Usually, stations within a certain walking distance (e.g., 500m) are considered to be close. Hence, we divide the urban area into small regions. For the ease of implementation, we partition the urban area into equal side-length grids using the griding based methods. Then, we aggregate stations in the transport graph into the grid level. Stations in the same grid are seen as a aggregated station. 
+In Shenzhen, China, there are about five thousand bus stops and more than one hundred subway stations. Many of these stations are located closely, especially in downtown areas. Usually, stations within a certain walking distance (e.g., 500m) are considered to be close. Hence, we divide the urban area into small regions. For the ease of implementation, we partition the urban area into equal side-length grids using the griding based methods. Fig.2 shows the result, highlighting (in white color) those 1018 grids covered by roads and transit network in Shenzhen, China. Then, we aggregate stations in the transport graph into the grid level. Stations in the same grid are seen as a aggregated station. 
+
+![](https://github.com/Trenchant-ymz/WWW2020-MAAL/blob/master/images/Map%20griding.pnghttps://anonymous.4open.science/repository/4fe4a551-b4df-43cf-8cb7-47dff24fe608/images/solution%20framework.png)
+<br> Fig.2 Map Griding
 
 ### Anonymization
 To protect the privacy of passengers, we anonymize the card IDs as well as the plate numbers.
