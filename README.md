@@ -8,7 +8,8 @@ people’s preferences from their public transit choices is non-trivial. When pe
 
 Data Description
 ----
-In [Download_Data](https://anonymous.4open.science/repository/4fe4a551-b4df-43cf-8cb7-47dff24fe608/Download_Data/), <font color='red'> Please refer to the link on the top of this page to download the released datase if the link is not available </font>
+In [Download_Data](https://anonymous.4open.science/repository/4fe4a551-b4df-43cf-8cb7-47dff24fe608/Download_Data/), $\color{red}{红色字}$
+<font color='red'> Please refer to the link on the top of this page to download the released datase if the link is not available </font>
 , we release our dataset. The released dataset was collected and processed by following steps.
 
 ### Data Collection: Public Transport Trajectory Data, Transport Graph Data and Bus GPS Data
