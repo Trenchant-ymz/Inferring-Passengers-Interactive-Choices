@@ -1,4 +1,5 @@
-# WWW2020-MAAL
+# Inferring Passengers’ Interactive Choices on Public Transits via MA-AL: Multi-Agent Apprenticeship Learning
+
 
 Abstract
 Public transports, such as subway lines and buses, offer affordable ride-sharing services and reduce the road network traffic. Extracting
