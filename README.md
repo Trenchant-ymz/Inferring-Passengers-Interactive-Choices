@@ -22,14 +22,16 @@ In Shenzhen, China, there are about five thousand bus stops and more than one hu
 To protect the privacy of passengers, we anonymize the card IDs as well as the plate numbers.
 
 ### An Example
-Taking the following data as an example:
+Based on the starting point and the destination, we divide data into 295 groups. All the passengers in the same group travel from the same grid to a same destination. Then in each group, we classify the data based on the time. Trajectories on the same day are put in a .csv file, while records on the same month are put in a folder. The specific data are as follows：
 
 | grid_id | key | route | time | type |	card | stage |
 | ------ | ------ | ------ |------ |------ |------ |------ |
 |1540 |	e48f2c2f72cc1767bcbaaafb10adeb3c |	B668 |	2016-09-05 07:23:13	| bus_on |	c33a35dff1b7643ddc1c28d48009b393 |	0 |
 |1540 |	e48f2c2f72cc1767bcbaaafb10adeb3c |	B668 |	2016-09-05 07:27:04 |	bus_off |	c33a35dff1b7643ddc1c28d48009b393 |	1 |
 
-There are seven attributes: *grid_id* indicates the grid coordinates; *key* represents the anonymized plate numbers of buses (when the transit mode is subway, it represents a subway station); *route* indicates a subway station or a but routes; *time* is the time slot the passenger taps the card; *type* indicates if the record is an event of getting aboard of a bus, or entering/leaving a subway station; *card* is the anonymized card_ID; *stage* represents the stage in the journey (starts from 0).
+There are seven attributes: *grid_id* indicates the grid coordinates; *key* represents the anonymized plate numbers of buses (when the transit mode is subway, it represents a subway station); *route* indicates a subway station or a but routes; *time* is the time slot the passenger taps the card; *type* indicates if the record is an event of getting aboard of a bus, or entering/leaving a subway station; *card* is the anonymized card_ID; *stage* represents the stage in the journey (starts from 0). 
+
+
 
 Change Log
 -----
