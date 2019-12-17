@@ -8,15 +8,8 @@ people’s preferences from their public transit choices is non-trivial. When pe
 
 Solution Framework
 ----
+![](https://github.com/Trenchant-ymz/WWW2020-MAAL/blob/master/images/solution%20framework.png)
 
 Data Description
 ----
-We use two datasets in our study, including public transit trajectory data (buses and subway lines), and transit graph data. All these
-datasets are adjust to the same time period: 06/2016–12/2016.
-
-### Public transport trajectory data. 
-We collected the passenger transaction data at AFC devices from buses and subway stations.Each record contains six attributes: card ID, transaction type, cost, record time, station name and transit mode. The transaction type indicates if the record is an event of getting aboard of a bus, or entering/leaving a subway station. The transit mode presents which transportation the passenger takes (e.g., subway line #2).
-
-###  Transport Graph Data. 
-Taking the advantage of the Google Geocoding API [1], we used a bounding square to represent Shenzhen. The square was defined by latitude from 22.42◦ to 22.8◦, while longitude from 113.75◦ to 114.68◦. It covers most of the Shenzhen urban area. Within this square, we obtain Shenzhen transport graph containing 892 bus routes and 8 subway lines. This transport graph data serves for feature extracting and can provide the information about buses and subway lines.
-[1] Google GeoCoding. 2016. Road map data. Google. https://developers.google.com/maps/documentation/geocoding/
+In [data_download](https://github.com/Trenchant-ymz/WWW2020-MAAL/tree/master/data_download), we release our dataset. Each record contains 
