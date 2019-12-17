@@ -16,7 +16,7 @@ In Shenzhen, there are automatic fare collection (AFC) systems in all buses and 
 <br>[1] Google GeoCoding. 2016. Road map data. Google. https://developers.google.com/maps/documentation/geocoding/
 
 ### Map Griding and Trip Aggregation
-In Shenzhen, China, there are about five thousand bus stops and more than one hundred subway stations. Many of these stations are located closely, especially in downtown areas. Usually, stations within a certain walking distance (e.g., 500m) are considered to be close. Hence, we divide the urban area into small regions. For the ease of implementation, we partition the urban area into equal side-length grids using the griding based methods. Fig.2 shows the result, highlighting (in white color) those 1018 grids covered by roads and transit network in Shenzhen, China. Then, we aggregate stations in the transport graph into the grid level. Stations in the same grid are seen as a aggregated station. 
+In Shenzhen, China, there are about five thousand bus stops and more than one hundred subway stations. Many of these stations are located closely, especially in downtown areas. Usually, stations within a certain walking distance (e.g., 500m) are considered to be close. Hence, we divide the urban area into small regions. For the ease of implementation, we partition the urban area into equal side-length grids using the griding based methods. Then, we aggregate stations in the transport graph into the grid level. Stations in the same grid are seen as a aggregated station. 
 
 ### Anonymization
 To protect the privacy of passengers, we anonymize the card IDs as well as the plate numbers.
