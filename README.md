@@ -8,7 +8,7 @@ people’s preferences from their public transit choices is non-trivial. When pe
 
 Data Description
 ----
-In [Download_Data](https://anonymous.4open.science/repository/4fe4a551-b4df-43cf-8cb7-47dff24fe608/Download_Data/),we release our dataset. The released dataset was collected and processed by following steps.
+In [Download_Data](https://anonymous.4open.science/repository/4fe4a551-b4df-43cf-8cb7-47dff24fe608/Download_Data/), we release our dataset. The released dataset was collected and processed by following steps.
  
 ```diff
 Please refer to the link on the top of this page to download the released dataset.
