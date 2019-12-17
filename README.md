@@ -26,10 +26,10 @@ Based on the starting point and the destination, we divide data into 295 groups.
 
 | grid_id | key | route | time | type |	card | stage |
 | ------ | ------ | ------ |------ |------ |------ |------ |
-|1540 |	e48f2c2f72cc1767bcbaaafb10adeb3c |	B668 |	2016-09-05 07:23:13	| bus_on |	c33a35dff1b7643ddc1c28d48009b393 |	0 |
-|1540 |	e48f2c2f72cc1767bcbaaafb10adeb3c |	B668 |	2016-09-05 07:27:04 |	bus_off |	c33a35dff1b7643ddc1c28d48009b393 |	1 |
+|1814 |	cf98d760e6328e46e508021a8aca74fb |	379 |	2016-09-05 07:13:05	| bus_on |	ae77849a6dacb5e609625acd782a0833 |	0 |
+|1856 |	cf98d760e6328e46e508021a8aca74fb |	379 |	2016-09-05 07:47:35 |	bus_off |	ae77849a6dacb5e609625acd782a0833 |	1 |
 
-There are seven attributes: *grid_id* indicates the grid coordinates; *key* represents the anonymized plate numbers of buses (when the transit mode is subway, it represents a subway station); *route* indicates a subway station or a but routes; *time* is the time slot the passenger taps the card; *type* indicates if the record is an event of getting aboard of a bus, or entering/leaving a subway station; *card* is the anonymized card_ID; *stage* represents the stage in the journey (starts from 0). 
+There are seven attributes: *grid_id* indicates the grid coordinates; *key* represents the anonymized plate numbers of buses (when the transit mode is subway, it represents a subway station); *route* indicates a subway station or a but routes; *time* is the time slot the passenger taps the card; *type* indicates if the record is an event of getting aboard of a bus, or entering/leaving a subway station; *card* is the anonymized card_ID; *stage* represents the stage in the journey (starts from 0). This example data represents that on grid 1814 a passenger whose card_ID is 'ae77849a6dacb5e609625acd782a0833' got on the bus line 379 at 2016-09-05 07:13:05, and the plat number of the bus was 'cf98d760e6328e46e508021a8aca74fb'. Then the passenger got off the bus at 2016-09-05 07:47:35 on grid 1856.
 
 
 
