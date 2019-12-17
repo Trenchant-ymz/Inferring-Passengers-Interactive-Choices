@@ -36,7 +36,7 @@ Taking the following data as an example:
 |1540 |	e48f2c2f72cc1767bcbaaafb10adeb3c |	B668 |	2016-09-05 07:23:13	| bus_on |	c33a35dff1b7643ddc1c28d48009b393 |	0 |
 |1540 |	e48f2c2f72cc1767bcbaaafb10adeb3c |	B668 |	2016-09-05 07:27:04 |	bus_off |	c33a35dff1b7643ddc1c28d48009b393 |	1 |
 
-There are seven attributes: *grid_id* indicates the grid coordinates; *key* represents the anonymized plate numbers; *route* indicates a subway line or a but routes; *time* is the time slot the passenger taps the card; *type* indicates if the record is an event of getting aboard of a bus, or entering/leaving a subway station; *card* is the anonymized card_ID; *stage* represents the stage in the journey (starts from 0).
+There are seven attributes: *grid_id* indicates the grid coordinates; *key* represents the anonymized plate numbers of buses (when the transit mode is subway, it represents a subway station); *route* indicates a subway station or a but routes; *time* is the time slot the passenger taps the card; *type* indicates if the record is an event of getting aboard of a bus, or entering/leaving a subway station; *card* is the anonymized card_ID; *stage* represents the stage in the journey (starts from 0).
 
 Change Log
 -----
