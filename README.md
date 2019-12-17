@@ -1,8 +1,6 @@
 # WWW2020-MAAL
-grid_id	key	route	time	type	Unnamed: 0	card	stage
-794	5fbe7fa807f88ad4ea7c9b26ce1220b2	鲤鱼门	2016-09-05 08:31:41	subway_on	187405.0	2ff5f906a808dc6ea0593000825883a4	0
-794	5fbe7fa807f88ad4ea7c9b26ce1220b2	鲤鱼门	2016-09-05 08:46:29	subway_on	187406.0	e3629a041176fef32fb81ae4102bf145	0
-794	5fbe7fa807f88ad4ea7c9b26ce1220b2	鲤鱼门	2016-09-05 08:36:24	subway_on	187425.0	81f9a70138b24264f1aeeee7940d027f	0
-794	5fbe7fa807f88ad4ea7c9b26ce1220b2	鲤鱼门	2016-09-05 08:25:17	subway_on	187448.0	efb1fed62a18877e1729e6390d3a217e	0
-794	5fbe7fa807f88ad4ea7c9b26ce1220b2	鲤鱼门	2016-09-05 08:52:38	subway_on	187499.0	55467566d1ab3776c116c6a567382f33	0
-794	5fbe7fa807f88ad4ea7c9b26ce1220b2	鲤鱼门	2016-09-05 08:52:44	subway_on	187501.0	81f310d1c705052e6028ad7d7754c87c	0
+
+Abstract
+Public transports, such as subway lines and buses, offer affordable ride-sharing services and reduce the road network traffic. Extracting
+people’s preferences from their public transit choices is non-trivial. When people travel by public transits, they make sequences of transit choices, and their rewards are usually influenced by the other people’s choices, so this process can be seen as a Markov Game
+(MG). In this paper, we make the first effort to model travelers’ preferences of making transit choices using MGs. Based on the discovery that passengers usually never change their policies, we propose novel algorithms to extract the reward functions from the observed, deterministic equilibrium joint policy of all agents in a general-sum MG to infer travelers’ preferences. First, we assume we have the access to the entire joint policy. We characterize the set of all reward functions for which the given joint policy is a Nash equilibrium policy. In order to remove the degeneracy of the solution, we then attempt to pick reward functions so as to maximize the deviation from the the observed policy to the suboptimal policy of each agent. This result in a skillfully solvable linear programming algorithm of the multi-agent inverse reinforcement learning (MA-IRL) problem. Then, we deal with the case where we have access to the equilibrium joint policy through an actual trajectory. We propose an iterative algorithm inspired by singleagent apprenticeship learning algorithms and the cyclic coordinate descent approach. Then, we validate our algorithms using a simple discrete problem. Finally, under the assumption that the actual joint policy is Nash equilibrium and the passengers’ reward functions are linear with the decision-making features, we use the proposed algorithms on a unique real-world dataset (from Shenzhen, China) to extract passengers’ preferences.
