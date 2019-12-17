@@ -28,7 +28,7 @@ In Shenzhen, China, there are about five thousand bus stops and more than one hu
 ### Anonymization
 To protect the privacy of passengers, we anonymize the card IDs as well as the plate numbers.
 
-### Example
+### An Example
 Taking the following data as an example:
 
 | grid_id | key | route | time | type |	card | stage |
