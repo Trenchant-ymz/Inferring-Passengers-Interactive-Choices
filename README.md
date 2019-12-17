@@ -8,7 +8,7 @@ people’s preferences from their public transit choices is non-trivial. When pe
 
 Data Description
 ----
-In [Download_Data](https://github.com/Trenchant-ymz/WWW2020-MAAL/tree/master/Download_Data), we release our dataset. The released dataset was collected and processed by following steps.
+In [Download_Data](https://github.com/Trenchant-ymz/Inferring-Passengers-Interactive-Choices/tree/master/Download_Data), we release our dataset. The released dataset was collected and processed by following steps.
 
 ### Data Collection: Public Transport Trajectory Data, Transport Graph Data and Bus GPS Data
 In Shenzhen, there are automatic fare collection (AFC) systems in all buses and subway stations. Bus passengers tap their smart cards at AFC devices to get aboard, while subway passengers need to tap their cards both when they enter and leave a subway station. We collected the passenger transaction data at AFC devices from buses and subway stations. Each record contains six attributes: card ID, transaction type, cost, record time, station name and transit mode. The transaction type indicates if the record is an event of getting aboard of a bus, or entering/leaving a subway station. The transit mode presents which transportation the passenger takes (e.g., subway line #2). Then, Taking the advantage of the Google Geocoding API [1], we used a bounding square to represent Shenzhen. The square was defined by latitude from 22.42◦ to 22.8◦, while longitude from 113.75◦ to 114.68◦. It covers most of the Shenzhen urban area. We also have access to the bus GPS data which contains each bus's plate number, bus line, and the geographic coordinates corresponding to time slot.
