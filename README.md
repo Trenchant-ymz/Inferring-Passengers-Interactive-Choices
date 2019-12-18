@@ -43,3 +43,10 @@ Change Log
 
 ### 2019/12/16
 Due to the time, we only released the data for two weeks. We will update the complete six-month data, as well as the code soon.
+
+### 2019/12/17
+In [Download_Code](https://anonymous.4open.science/repository/4fe4a551-b4df-43cf-8cb7-47dff24fe608/Download_Code/), we release our codes: The program named as 'data_processing.py' grids, aggregates and anonymizes data as is described above; the program in the folder 'Grid game' simulate the experiment of 2 \times 2 grid game in Section 6. The rest of codes will be released soon.
+ 
+```diff
+Please refer to the link on the top of this page to download the released code.
+```
