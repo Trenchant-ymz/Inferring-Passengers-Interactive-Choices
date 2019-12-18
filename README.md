@@ -45,4 +45,4 @@ Change Log
 Due to the time, we only released the data for two weeks. We will update the complete six-month data, as well as the code soon.
 
 ### 2019/12/17
-We have built an anonymous Github repository to release the codes. In [Download_Code](https://github.com/WWW2020-paper1529/Download_Code), the codes of two progams have been released: The program named as 'data_processing.py' processes the raw data by map griding, trip aggregation and anonymization as described above; the program in the folder 'Grid game' simulate the experiment of 2 \times 2 grid game describe in Section 6 in the paper. The rest of codes will be released soon.
+We have built an anonymous Github repository to release the codes. In [Download_Code](https://github.com/WWW2020-paper1529/Download_Code), the codes of two progams have been released: The program named as 'data_processing.py' processes the raw data by map griding, trip aggregation and anonymization as described above; the program in the folder 'Grid game' simulate the experiment of 2 * 2 grid game describe in Section 6 in the paper. The rest of codes will be released soon.
